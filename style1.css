@@ -1,0 +1,557 @@
+/* Import Montserrat font */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    z-index: 10;
+    background: transparent;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.logo img {
+    padding-right: 5%;
+}
+
+.logo h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 20;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mobile-menu ul li a:hover {
+    color: orange;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    .mobile-menu.active {
+        display: flex;
+    }
+}
+
+.banner {
+    position: relative;
+    background: url('assets/Rectangle\ 3470164.jpg') no-repeat center center/cover;
+    height: auto;
+    color: white;
+    padding: 5%;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 19%;
+    left: 0;
+    width: 100%;
+    height: 27%;
+    background: rgba(218, 30, 162, 0.5);
+    z-index: 0;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    width: 50%;
+    top: 50px;
+    left: 100px;
+}
+
+
+/* .banner-content h1 {
+    font-size: 240px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.5);
+    transform: translateY(20px);
+} */
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: -90px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.banner-text h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.banner-text-content {
+    position: absolute;
+    right: 5%;
+    top: 54%;
+    transform: translateY(-190%);
+    max-width: 40%;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.stats-section {
+    margin-top: 20px;
+    background-color: rgba(34, 34, 34, 0.8);
+    /* Reduced opacity */
+    color: white;
+    width: 90%;
+    margin: 90px auto 0;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.stats-navigation {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stats-navigation a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.stats-navigation a.active {
+    color: #00b7ff;
+    font-weight: bold;
+}
+
+.stats-navigation a:hover {
+    color: white;
+}
+
+.stats-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.stats-box {
+    background-color: #383838;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    min-width: 180px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.stats-box:hover {
+    background-color: orange;
+    color: black;
+}
+
+.stats-box h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.stats-box i.check-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #00ff00;
+}
+
+.stats-description {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* Reduced gap between cards */
+    width: 100%;
+    /* Full page width */
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    /* Restrict the overall width for better aesthetics */
+}
+
+.card {
+    position: relative;
+    flex: 1;
+    /* Each card gets an equal share of space */
+    height: 250px;
+    /* Reduced card height */
+    overflow: hidden;
+    border-radius: 5px;
+    /* Rounded corners for the cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    /* Slight zoom-in effect on hover */
+    opacity: 0.5;
+    /* Adds transparency on hover */
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Black transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    /* Reduced font size */
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.einstein-ai-section {
+    position: relative;
+    background-color: #238EB8;
+    /* Blue background */
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    /* Align text and image at the top */
+    padding: 30px 20px;
+    margin: 60px 0px;
+}
+
+.einstein-ai-section .content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.einstein-ai-section .content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 15px;
+    padding-left: 26%;
+}
+
+.einstein-ai-section .content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 26%;
+}
+
+.einstein-ai-section .image {
+    flex: 0.8;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.einstein-ai-section .image img {
+    position: absolute;
+    top: -60px;
+    /* Image floats above the blue area */
+    right: 10%;
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* //footer */
+
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    /* Adds space between the links */
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+footer .copyright {
+    background-color: #111;
+    padding: 4px;
+}
+
+.custom-slider {
+    position: relative;
+    width: 90%;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.custom-slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 200%;
+    margin-top: 50px;
+}
+
+.custom-slider-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 columns */
+    grid-template-rows: repeat(3, auto);
+    /* 3 rows */
+    /* Reduced gap between boxes */
+    gap: 5px;
+}
+
+.custom-card {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    /* Make boxes larger to reduce empty space */
+}
+
+.custom-card :hover {}
+
+.custom-card img {
+    width: 60%;
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    /* Reduced margin */
+}
+
+.custom-card-content {
+    flex-grow: 1;
+    text-align: left;
+    /* padding-left: 50px;
+    padding-right: 30px; */
+    width: 90%;
+    padding: 10px 5px 20px 50px;
+}
+
+.custom-card-content h3 {
+    font-size: 1em;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.custom-card-content p {
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.custom-prev,
+.custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(4, 29, 92, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.custom-prev {
+    left: 3px;
+    /* Positioned closer to the slider */
+}
+
+.custom-next {
+    right: 0px;
+    /* Positioned closer to the slider */
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: rgba(18, 15, 158, 0.7);
+}
