@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <header>
+        <div class="mainlogo">
+            <img src="assets/image 4.png" alt="">
+            <a href="#" class="logo">AKIKO SHERMAN INFOTECH</a>
+        </div>
+        <div class="menu-btn" id="hamburger-menu"> </div>
+        <div class="navigation">
+
+
+
+            <div class="navigation-items" id="navigation-items">
+                <a href="">The Company</a>
+                <a href="">Solutions</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+                <a href="">Technologies</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <img src="assets/bg.jpg" class="bg-slide active" alt="">
+        <img src="assets/bg.jpg" class="bg-slide" alt="">
+        <img src="assets/bg.jpg" class="bg-slide" alt="">
+        <img src="assets/bg.jpg" class="bg-slide" alt="">
+        <img src="assets/bg.jpg" class="bg-slide" alt="">
+        <div class="content active">
+            <!-- <p class="para-1">Powering your </p> -->
+            <h1>E-COMMERCE</h1>
+            <p class="para">The Comprehensive Agritech ERP Platform Streamlining Supply Chain and E-commerce Operations for Perishable Commodities</p>
+
+        </div>
+        <div class="content">
+            <!-- <p class="para-1">Build Seamless</p> -->
+            <h1>WEB & MOBILITY</h1>
+            <p class="para">The Comprehensive Agritech ERP Platform Streamlining Supply Chain and E-commerce Operations for Perishable Commodities</p>
+
+        </div>
+        <div class="content">
+            <!-- <p class="para-1">Transforming Public Services with</p> -->
+            <h1>E-GOVERNANCE</h1>
+            <p class="para">The Comprehensive Agritech ERP Platform Streamlining Supply Chain and E-commerce Operations for Perishable Commodities</p>
+
+        </div>
+        <div class="content">
+            <!-- <p class="para-1">Transforming Public Services with</p> -->
+            <h1>E-GOVERNANCE</h1>
+            <p class="para">The Comprehensive Agritech ERP Platform Streamlining Supply Chain and E-commerce Operations for Perishable Commodities</p>
+
+        </div>
+        <div class="content">
+            <!-- <p class="para-1">Transforming Public Services with</p> -->
+            <h1>E-GOVERNANCE</h1>
+            <p class="para">The Comprehensive Agritech ERP Platform Streamlining Supply Chain and E-commerce Operations for Perishable Commodities</p>
+
+        </div>
+
+        <div class="slider-navigation">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+
+    </section>
+    <section class="sec-2">
+        <div class="solution">
+            <h2>CUTTING EDGE SOLUTIONS TAILORED FOR YOUR NEEDS</h2>
+            <p>A perfect blend of strategy, design, marketing and digital expertise.</p>
+        </div>
+
+        <div class="container">
+            <!-- Left Content -->
+            <div class="left-container" id="left-container">
+                <div class="circle-overlay">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                    <div class="circle5"></div>
+                    <div class="circle6"></div>
+                </div>
+                <div class="content" id="content">
+                    <h1>Web & Mobility</h1>
+                    <p>With 20 years of experience, we deliver custom web applications and cross-platform mobile solutions for seamless, anytime, anywhere access.</p>
+                    <button class="read-more-btn">READ MORE</button>
+                </div>
+            </div>
+
+            <!-- Right Menu -->
+            <div class="right-container">
+                <div class="vertical-menu">
+                    <button onclick="updateContent('Web & Mobility', 'With 20 years of experience, we deliver custom web applications and cross-platform mobile solutions for seamless, anytime, anywhere access.', 'assets/smartphone-with-user-interface-concept 1 (2).png')"
+                        class="active">Web & Mobility</button>
+                    <button onclick="updateContent('E-Governance', 'Portfolio of more than 500 Web Applications / Portals for various Center & State Govt. Depts and PSUs', 'assets/egov (1).png')">E-Governance</button>
+                    <button onclick="updateContent('E-Commerce', 'Shaping retail experiences with comprehensive E-Commerce solutions for seamless online transactions and customer satisfaction.', 'assets/ecom (1).png')">E-Commerce</button>
+                    <button onclick="updateContent('Cloud Solutions', 'Experience  flexible cost-efficiency, scalability, and robust security with our  cloud solutions, driving innovation & growth for your business.', 'assets/cloudsol (1).png')">Cloud Solutions</button>
+                    <button onclick="updateContent('Salesforce Implementation', 'Unlock business potential through streamlined Salesforce implementation, elevating productivity and customer engagement.', 'assets/salesforce (1).png')">Salesforce Implementation</button>
+                    <button onclick="updateContent('Business Intelligence', 'Shaping retail experiences with comprehensive E-Commerce solutions for seamless online transactions and customer satisfaction.', 'assets/s&s.png')">Business Intelligence</button>
+                    <button onclick="updateContent('Staffing & Support', 'Connecting talent with opportunity, our staffing and support service ensures seamless workforce solutions for business success.', 'assets/s&s (1).png')">Staffing & Support</button>
+                    <button onclick="updateContent('AI & ML', 'Elevating businesses through our AI/ML services, unlocking the power of data for intelligent decision-making and innovation.', 'assets/ai ml (1).png')">AI & ML</button>
+                    <button onclick="updateContent('Web & Mobility', 'With 20 years of experience, we deliver custom web applications and cross-platform mobile solutions for seamless, anytime, anywhere access.', 'assets/smartphone-with-user-interface-concept 1 (2).png')">Web & Mobility</button>
+                    <button onclick="updateContent('E-Governance', 'Portfolio of more than 500 Web Applications / Portals for various Center & State Govt. Depts and PSUs', 'assets/egov (1).png')">E-Governance</button>
+                    <button onclick="updateContent('E-Commerce', 'Shaping retail experiences with comprehensive E-Commerce solutions for seamless online transactions and customer satisfaction.', 'assets/ecom (1).png')">E-Commerce</button>
+                    <button onclick="updateContent('Cloud Solutions', 'Experience  flexible cost-efficiency, scalability, and robust security with our  cloud solutions, driving innovation & growth for your business.', 'assets/cloudsol (1).png')">Cloud Solutions</button>
+                    <button onclick="updateContent('Salesforce Implementation', 'Unlock business potential through streamlined Salesforce implementation, elevating productivity and customer engagement.', 'assets/salesforce (1).png')">Salesforce Implementation</button>
+                    <button onclick="updateContent('Business Intelligence', 'Shaping retail experiences with comprehensive E-Commerce solutions for seamless online transactions and customer satisfaction.', 'assets/s&s.png')">Business Intelligence</button>
+                    <button onclick="updateContent('Staffing & Support', 'Connecting talent with opportunity, our staffing and support service ensures seamless workforce solutions for business success.', 'assets/s&s (1).png')">Staffing & Support</button>
+                    <button onclick="updateContent('AI & ML', 'Elevating businesses through our AI/ML services, unlocking the power of data for intelligent decision-making and innovation.', 'assets/ai ml (1).png')">AI & ML</button>
+
+                </div>
+            </div>
+        </div>
+        <!-- <span class="arrow left-arrow" onclick="scrollLeft()">&larr;</span>
+        <span class="arrow right-arrow" onclick="scrollRight()">&rarr;</span> -->
+
+
+    </section>
+    <!-- Section 3 -->
+    <section class="sec-3 scroll-animation">
+        <div class="main-container">
+            <!-- Header Section -->
+            <div class="header-section scroll-animation">
+                <h1>
+                    <span>TRANSFORMING</span>
+                    <span>BUSINESS THROUGH</span>
+                    <span>TECHNOLOGY</span>
+                    <span>INNOVATION</span>
+                </h1>
+                <p class="cmmi">
+                    We are proud to be a CMMI Level 3 service provider.
+
+                </p>
+                <img src="assets/cmmi2.png" alt="CMMI">
+            </div>
+
+            <!-- Why Choose Us Section -->
+            <div class="why-choose-us scroll-animation">
+                <h2>Why Choose Us?</h2>
+                <p>
+                    With more than 20 years of ICT experience and a portfolio of more than 300 eGovernance solutions / projects successfully developed for various center & state government departments and public sector undertakings, Akiko Sherman Infotech has always been
+                    at the forefront of delivering best in class services to its clients in line with the digital india mission and has been a pioneer in government digital space. In the rapidly evolving ICT industry with its focus on change,ever increasing
+                    complexity, sophistication, and multi disciplinary crossware expertise we have sincerely strived to"make a difference" for each client we have been involved with.
+                </p>
+
+            </div>
+
+            <!-- Clients Section -->
+            <div class="clients-section-title scroll-animation">
+                <p>Clients That Trust Us</p>
+            </div>
+            <div class="full-width-container">
+
+            </div>
+            <div class="clients-section">
+                <div class="clients-row">
+                    <!-- Client Logos -->
+                    <div class="client">
+                        <img src="assets/indianair (1).png" alt="Client 1">
+                        <p>Indian Air Force</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/mod.png" alt="Client 2">
+                        <p>Ministry of Home Affairs</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/nic.png" alt="Client 3">
+                        <p>National Informatics Center Services INC.</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/mod.png" alt="Client 4">
+                        <p>Ministry of Defense</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/rajarammohun.png" alt="Client 5">
+                        <p>Raja RamMohan Roy National Agency</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/mod.png" alt="Client 6">
+                        <p>Ministry of Health & Family Welfare</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/coucilofarchitecture.png" alt="Client 7">
+                        <p>Council of Architecture</p>
+                    </div>
+                    <!-- Duplicate items for seamless scrolling -->
+                    <div class="client">
+                        <img src="assets/mod.png" alt="Client 1">
+                        <p>Ministry of AYUSH</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/indian army.png" alt="Client 2">
+                        <p>Indian Army</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/sashtra seema bal.png" alt="Client 1">
+                        <p>Sashastra Seema Bal</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/mod.png" alt="Client 2">
+                        <p>Ministry of Road Transport & Highways</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/mod.png" alt="Client 3">
+                        <p>Ministry of Mines</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/border of roads.png" alt="Client 4">
+                        <p>Border Roads Organization</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/mod.png" alt="Client 5">
+                        <p>Ministry of Commerce & Industry</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/himachalpradeshstatedisaster.png" alt="Client 6">
+                        <p>Himachal Pradesh State Disaster Management</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/coucilofarchitecture.png" alt="Client 7">
+                        <p>Council of Architecture</p>
+                    </div>
+                    <!-- Duplicate items for seamless scrolling -->
+                    <div class="client">
+                        <img src="assets/mod.png" alt="Client 1">
+                        <p>Union Public Service Commission</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/minofwomen.png" alt="Client 2">
+                        <p>Ministry of Woman & Child development</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/railindiatech.png" alt="Client 2">
+                        <p>Rail India Technical & Economic Services</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/himavhalpradeg.png" alt="Client 2">
+                        <p>Himachal Pradesh State Electronics</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/sftwaretechpoi.png" alt="Client 2">
+                        <p>Software Technology Parks of India</p>
+                    </div>
+                    <div class="client">
+                        <img src="assets/punjabstate.png" alt="Client 2">
+                        <p>Punjab State E-Governance Society</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="portfolio-section scroll-animation">
+            <div class="portfolio-content">
+                <h1>OUR PORTFOLIO</h1>
+                <h2>Showcasing our successful projects and client success stories</h2>
+                <p>For over two decades, Akiko Sherman Infotech has pioneered government digital solutions, delivering best-in-class services to clients.</p>
+                <p>With 300+ successful EGovernance projects, we align with the digital India mission and prioritize client satisfaction.</p>
+                <button class="explore-btn">EXPLORE</button>
+            </div>
+            <div class="portfolio-slider">
+                <div class="slider-container">
+                    <div class="slider-item">
+                        <img src="assets/Rectangle 150.png" alt="Infracon">
+                        <div class="slider-item-content">
+                            <h3>INFRACON</h3>
+                            <p>Ministry of Road Transport & Highways</p>
+                            <a href="http://infracon.nic.in/">URL: http://infracon.nic.in/</a>
+                            <button class="view-btn">VIEW</button></div>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/landacquistion (1).png" alt="Land Acquisition">
+                        <div class="slider-item-content">
+                            <h3>LAND AQUISATION</h3>
+                            <p>Ministry of Road Transport & Highways</p>
+                            <a href="http://bhoomirashi.gov.in/">URL: http://bhoomirashi.gov.in/</a><button class="view-btn">VIEW</button></div>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/EPACE.png" alt="Infracon">
+                        <div class="slider-item-content">
+                            <h3>EPACE</h3>
+                            <p>Ministry of Road Transport & Highways</p>
+                            <a href="http://epace.nic.in/">URL: http://epace.nic.in/</a><button class="view-btn">VIEW</button></div>
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/TAMRA.png" alt="Land Acquisition">
+                        <div class="slider-item-content">
+                            <h3>TAMRA</h3>
+                            <p>Ministry of Road Transport & Highways</p>
+                            <a href="http://tamra.gov.in/mom.php">URL: http://tamra.gov.in/mom.php</a><button class="view-btn">VIEW</button></div>
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow left" onclick="prevSlide()">&#8249;</button>
+            <button class="arrow right" onclick="nextSlide()">&#8250;</button>
+        </div>
+
+    </section>
+    <section class="custom-section-bg scroll-animation">
+        <div class="custom-content-wrapper">
+            <div class="custom-text-container">
+                <h1 class="custom-heading">Unlock Your Career Potential with Akiko Sherman Infotech.</h1>
+                <p class="custom-paragraph">
+                    As a leading global company specializing in innovative IT solutions, we provide a dynamic and inclusive environment that nurtures growth, encourages creativity, and values diversity. Whether you're an experienced professional seeking exciting challenges
+                    or a fresh graduate looking to launch your career, we offer a range of opportunities that will help you unlock your full potential.
+                </p>
+                <button class="custom-cta-button">APPLY FOR JOB</button>
+            </div>
+        </div>
+    </section>
+    <h2 class="blog-title-custom scroll-animation">READ MORE FROM OUR BLOGS</h2>
+
+    <section class="blog-section-custom scroll-animation">
+        <div class="blog-container-custom scroll-animation">
+            <!-- Left Content -->
+            <div class="blog-main-custom">
+                <img src="assets/blogmain.png" alt="Blog Image" class="blog-image-custom scroll-animation" id="main-image-custom">
+                <div class="blog-info-custom">
+                    <h3 id="main-title-custom scroll-animation">CM OF ANDHRA PRADESH DURING THE LAUNCH OF OUR PROJECT “FARM2PLATE” (FISH ANDHRA)</h3>
+                    <p id="main-description-custom scroll-animation">Farm2Plate is a one-stop Agritech ERP Platform to simplify Supply Chain and E-commerce needs for the Perishable commodities...</p>
+                    <button class="read-more-btn-custom scroll-animation">READ MORE</button>
+                </div>
+            </div>
+
+            <!-- Right Blog List -->
+            <div class="blog-list-custom scroll-animation">
+                <div class="blog-item-custom" onclick="changeBlog('assets/blog2.jpg', 'THE FUTURE OF AI IN HEALTHCARE', 'Explore how AI is reshaping the healthcare industry with groundbreaking innovations....')">
+                    <img src="assets/blog2.jpg" alt="Blog Thumbnail">
+                    <p class="blog-text-head">10 NEW TOOLS TO AUTOMATE YOUR BUSINESS USING AI</p>
+                </div>
+
+                <div class="blog-item-custom" onclick="changeBlog('assets/blog3.jpg', 'THE FUTURE OF AI IN HEALTHCARE', 'Explore how AI is reshaping the healthcare industry with groundbreaking innovations....')">
+                    <img src="assets/blog3.jpg" alt="Blog Thumbnail">
+                    <p class="blog-text-head">10 NEW TOOLS TO AUTOMATE YOUR BUSINESS USING AI</p>
+                </div>
+
+                <div class="blog-item-custom" onclick="changeBlog('assets/blog4.jpg', 'THE FUTURE OF AI IN HEALTHCARE', 'Explore how AI is reshaping the healthcare industry with groundbreaking innovations.......')">
+                    <img src="assets/blog4.jpg" alt="Blog Thumbnail">
+                    <p class="blog-text-head">T10 NEW TOOLS TO AUTOMATE YOUR BUSINESS USING AI</p>
+                </div>
+
+                <div class="blog-item-custom" onclick="changeBlog('assets/blogmain.png', 'CM OF ANDHRA PRADESH DURING THE LAUNCH OF OUR PROJECT “FARM2PLATE” (FISH ANDHRA)', 'Farm2Plate is a one-stop Agritech ERP Platform to simplify Supply Chain and E-commerce needs for the Perishable commodities.......')">
+                    <img src="assets/blogmain.png" alt="Blog Thumbnail">
+                    <p class="blog-text-head">CM OF ANDHRA PRADESH DURING THE LAUNCH OF OUR PROJECT “FARM2PLATE” (FISH ANDHRA)</p>
+                </div>
+
+                <div class="blog-item-custom" onclick="changeBlog('assets/blog4.jpg', 'THE FUTURE OF AI IN HEALTHCARE', 'Explore how AI is reshaping the healthcare industry with groundbreaking innovations.')">
+                    <img src="assets/blog2.jpg" alt="Blog Thumbnail">
+                    <p class="blog-text-head">10 NEW TOOLS TO AUTOMATE YOUR BUSINESS USING AI/p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section scroll-animation">
+        <div class="contact-container">
+            <div class="contact-left scroll-animation">
+                <h2>LET'S CONNECT</h2>
+                <p>HAVE A UNIQUE IDEA?<br>WANT TO REVAMP YOUR DIGITAL PRODUCT?<br>LET US KNOW!</p>
+                <button class="contact-btn">SEND MESSAGE</button>
+            </div>
+            <div class="contact-right scroll-animation">
+                <form>
+                    <label>Your Name</label>
+                    <input type="text" required>
+
+                    <label>Phone Number</label>
+                    <input type="tel" required>
+
+                    <label>Email Address</label>
+                    <input type="email" required>
+
+                    <label>Company/Organization Name</label>
+                    <input type="text" required>
+
+                    <label>Your Message</label>
+                    <textarea required></textarea>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section1 company-info">
+                <img src="assets/image 4.png" alt="Akiko Sherman Infotech Logo" class="footer-logo">
+                <h2>Akiko Sherman Infotech</h2>
+                <p>Akiko Sherman Infotech is an independent division under Sherman group of companies. With more than 20 years of experience, the company has successfully delivered over 300 IT Projects for various Central and State Govt. Depts, PSUs and
+                    other enterprises.</p>
+            </div>
+            <div class="footer-section">
+                <h3>SiteMap</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">The Company</a></li>
+                    <li><a href="#">Our Solutions</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Technologies</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Solutions</h3>
+                <ul>
+                    <li><a href="#">E-Governance</a></li>
+                    <li><a href="#">Web Solutions</a></li>
+                    <li><a href="#">Mobility Solutions</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                    <li><a href="#">GIGW Websites</a></li>
+                    <li><a href="#">Data Analytics</a></li>
+                    <li><a href="#">Staffing & Support</a></li>
+                    <li><a href="#">Emerging Technologies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>More</h3>
+                <ul>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Follow Us on Social Media</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+                <h3>Reach Out to Us</h3>
+                <p>011-23684079</p>
+                <p><a href="mailto:suvidit@shermanindia.com">suvidit@shermanindia.com</a></p>
+                <p><a href="mailto:manu@shermanindia.com">manu@shermanindia.com</a></p>
+            </div>
+        </div>
+        <p class="copyright"><span class="copyright-symbol">&copy;</span> All Rights Reserved, Akiko Sherman Infotech, 2023.</p>
+
+    </footer>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".portfolio-content", {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".portfolio-content",
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.to(".explore-btn", {
+            opacity: 1,
+            scale: 1,
+            duration: 1,
+            delay: 0.5,
+            ease: "back.out(1.7)",
+            scrollTrigger: {
+                trigger: ".portfolio-content",
+                start: "top 80%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.to(".portfolio-slider", {
+            opacity: 1,
+            x: 0,
+            duration: 1.5,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".portfolio-slider",
+                start: "top 90%",
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        gsap.to(".slider-item", {
+            opacity: 1,
+            scale: 1,
+            duration: 1.2,
+            stagger: 0.3,
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".portfolio-slider",
+                start: "top 85%",
+                toggleActions: "play none none reverse"
+            }
+        });
+        let currentIndex = 0;
+
+        function nextSlide() {
+            const sliderContainer = document.querySelector('.slider-container');
+            const totalSlides = document.querySelectorAll('.slider-item').length;
+            currentIndex = (currentIndex + 1) % totalSlides;
+            sliderContainer.style.transform = `translateX(-${currentIndex * 66.67}%)`;
+            resetProgress();
+        }
+
+        function prevSlide() {
+            const sliderContainer = document.querySelector('.slider-container');
+            const totalSlides = document.querySelectorAll('.slider-item').length;
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            sliderContainer.style.transform = `translateX(-${currentIndex * 66.67}%)`;
+            resetProgress();
+        }
+
+        function resetProgress() {
+            document.querySelectorAll('.progress-bar').forEach(bar => bar.style.width = '0');
+            setTimeout(() => document.querySelectorAll('.progress-bar')[currentIndex].style.width = '100%', 50);
+        }
+        resetProgress();
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".bg-slide");
+        const contents = document.querySelectorAll(".content");
+        let currentindex = 0;
+        const totalSlides = slides.length;
+
+        function sliderNav(index) {
+            btns.forEach((btn) => btn.classList.remove("active"));
+            slides.forEach((slide) => slide.classList.remove("active"));
+            contents.forEach((content) => content.classList.remove("active"));
+
+            btns[index].classList.add("active");
+            slides[index].classList.add("active");
+            contents[index].classList.add("active");
+
+            // Add transition effect to heading and paragraph
+            const heading = contents[index].querySelector("h1");
+            const paragraph = contents[index].querySelector(".para");
+
+
+            heading.style.opacity = "0";
+            heading.style.transform = "translateY(20px)";
+            paragraph.style.opacity = "0";
+            paragraph.style.transform = "translateY(20px)";
+
+            setTimeout(() => {
+                heading.style.opacity = "1";
+                heading.style.transform = "translateY(0)";
+                paragraph.style.opacity = "1";
+                paragraph.style.transform = "translateY(0)";
+
+            }, 300); // Delayed transition after slide appears
+        }
+
+        function autoSlide() {
+            currentindex = (currentindex + 1) % totalSlides;
+            sliderNav(currentindex);
+        }
+
+        // Show the first slide on load with clip-path effect
+        window.addEventListener("load", () => {
+            slides[0].classList.add("active");
+            contents[0].classList.add("active");
+            btns[0].classList.add("active");
+
+            setTimeout(() => {
+                const heading = contents[0].querySelector("h1");
+                const paragraph = contents[0].querySelector(".para"); // 'index' is undefined
+                <!--  -->
+
+                heading.style.opacity = "1";
+                heading.style.transform = "translateY(0)";
+                paragraph.style.opacity = "1";
+                paragraph.style.transform = "translateY(0)";
+
+            }, 300);
+        });
+
+
+        let slideInterval = setInterval(autoSlide, 5000);
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                clearInterval(slideInterval);
+                sliderNav(i);
+                currentindex = i;
+                slideInterval = setInterval(autoSlide, 3000);
+            });
+        });
+
+
+        function updateContent(title, description, backgroundImage) {
+            const leftContainer = document.getElementById('left-container');
+            const content = document.getElementById('content');
+
+            content.style.opacity = 0;
+
+            setTimeout(() => {
+                content.innerHTML = `<h1>${title}</h1><p>${description}</p><button class="read-more-btn">READ MORE</button>`;
+                leftContainer.style.background = `url('${backgroundImage}') no-repeat center center/cover`;
+                content.style.opacity = 1;
+            }, 300);
+
+            document.querySelectorAll('.vertical-menu button').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const scrollElements = document.querySelectorAll(".scroll-animation");
+
+            const observerOptions = {
+                threshold: 0.1,
+            };
+
+            const scrollObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate");
+                        observer.unobserve(entry.target); // Optional: Stop observing after animation
+                    }
+                });
+            }, observerOptions);
+
+            scrollElements.forEach((element) => {
+                scrollObserver.observe(element);
+            });
+        });
+
+        function changeBlog(image, title, description) {
+            // Get the left content elements
+            const mainImage = document.querySelector('#main-image-custom'); // Correct ID selector
+            const mainTitle = document.querySelector('#main-title-custom'); // Correct ID selector
+            const mainDescription = document.querySelector('#main-description-custom'); // Correct ID selector
+
+            // Check if elements exist
+            if (!mainImage || !mainTitle || !mainDescription) {
+                console.error('Error: One or more elements are not found in the DOM.');
+                return;
+            }
+
+            // Add smooth transitions
+            mainImage.style.transition = "opacity 0.3s ease-in-out";
+            mainTitle.style.transition = "opacity 0.3s ease-in-out";
+            mainDescription.style.transition = "opacity 0.3s ease-in-out";
+
+            // Fade-out effect
+            mainImage.style.opacity = 0;
+            mainTitle.style.opacity = 0;
+            mainDescription.style.opacity = 0;
+
+            setTimeout(() => {
+                // Preload the image to avoid flickering
+                const img = new Image();
+                img.src = image;
+                img.onload = () => {
+                    mainImage.src = image;
+                    mainTitle.textContent = title;
+                    mainDescription.textContent = description;
+
+                    // Fade-in effect
+                    mainImage.style.opacity = 1;
+                    mainTitle.style.opacity = 1;
+                    mainDescription.style.opacity = 1;
+                };
+            }, 300);
+        }
+    </script>
+
+
+</body>
+
+</html>
