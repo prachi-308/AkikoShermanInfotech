@@ -78,7 +78,7 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        background-color: rgb(24, 24, 24);
+        background-color: rgb(5, 109, 9);
         overflow: hidden;
         /* Prevents overflow issues */
     }
@@ -87,7 +87,7 @@
         z-index: 777;
         content: '';
         position: absolute;
-        background: rgb(3, 134, 7);
+        background: rgba(108, 48, 48, 0);
         width: 100%;
         height: 100%;
         top: 0;
